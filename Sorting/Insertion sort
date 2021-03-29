@@ -1,4 +1,4 @@
-# ***** C program *****
+***** C program *****
 #include<stdio.h>
 void main()
 {
@@ -46,4 +46,152 @@ void main()
  }
 }
 
+***** Java progarm *****
+public class InsertionSort
+{
+ public static void main(String args[])
+ {
+  int[] a = {10,9,7,101,23,44,12,78,34,23};
+  for(int k=1;k<10;k++)
+  {
+   int temp = a[k];
+   int j = k-1;
+   while(j>=0 && temp<==a[j])
+   {
+    a[j+1] = a[j];
+    j = j-1;
+   }
+   a[j+1] = temp;
+  }
+  System.out.println("printing sorted elements ...");
+  for(int i=0;i<10;i++)
+  {
+   System.out.println(a[i]);
+  }
+ }
+}
 
+***** C# program *****
+using System;
+public class Program
+{
+ public static void Main()
+ {
+  int i,j,k,temp;
+  int[] a = {10,9,7,101,23,44,12,78,34,23};
+  Console.WriteLine("\n printing sorted elements ... \n");
+  for(k=1;k<10;k++)
+  {
+   temp = a[k];
+   j=k-1;
+   while(j>=0 && temp<=a[j])
+   {
+    a[j+1]=a[j];
+    j=j-1;
+   }
+   a[j+1] = temp;
+  }
+  for(i=0;i<10;i++)
+  {
+   Console.WriteLine(a[i]);
+  }
+ }
+} 
+
+***** Python program *****
+a = [10,9,7,101,23,44,12,78,34,23]
+for k in range(1,10):
+ temp = a[k]
+ j = k-1
+ while j>=0 and temp<=a[j]:
+  a[j+1] = a[j]
+  j = j-1
+  a[j+1] = temp
+print("printing sorted elements...")
+for i in a:
+ print(i)
+ 
+***** Swift program *****
+import Foundation
+import Glibc
+ var a = [10,9,7,101,23,44,12,78,34,23];
+ print("\n printing sorted elements... \n");
+ for k in 1...9
+ {
+  let temp = a[k];
+  var j=k-1;
+  while j>=0 && temp<=a[j]
+  {
+   a[j+1] = a[j];
+   j = j-1;
+  }
+  a[j+1] = temp;
+ }
+ for i in a
+ {
+  print(i);
+ }
+ 
+ ***** JavaScript program *****
+ <html>
+  <head>
+   <title>
+    Insertion Sort
+   </title>
+  </head>
+  <body>
+   <script>
+    var txt = "<br>";
+    var a = [10,9,7,101,23,44,12,78,34,23];
+    document.writeln("printing sorted elements..." + txt);
+    for(k=0;k<10;k++)
+    {
+     var temp = a[k]
+     j = k-1;
+     while(j>=0 && temp<=a[j])
+     {
+      a[j+1] = a[j];
+      j = j-1;
+     }
+     a[j+1] = temp;
+    }
+    for(i=0;i<10;i++)
+    {
+     document.writeln(a[j]);
+     document.writeln(txt);
+    }
+   </script>
+  </body>
+ </html> 
+ 
+ ***** PHP program *****
+ <html>
+  <head>
+   <title>
+    Insertion sort
+   </title>
+  </head>
+  <body>
+   <?php
+    $a = array(10,9,7,101,23,44,12,78,34,23);
+    echo("printing sorted elements...\n");
+    for($k=0;$k<10;$k++)
+    {
+     $temp = $a[$k];
+     $j = $k-1;
+     while($j>=0 && $temp<=$a[$j])
+     {
+      $a[$j+1] = $a[$j];
+      $j = $j-1;
+     }
+     $a[$j+1] = $temp;
+    }
+    for($i=0;$i<10;$i++)
+    { 
+     echo $a[$i];
+     echo "\n";
+    }
+   ?>
+  </body>
+ </html>
+ 
