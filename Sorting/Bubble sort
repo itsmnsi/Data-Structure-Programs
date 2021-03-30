@@ -1,0 +1,210 @@
+***** C program *****
+#include<stdio.h>
+void main()
+{
+ int i,j,temp;
+ int a[10] = {10,9,7,101,23,44,12,78,34,23};
+ for(i=0;i<10;i++)
+ {
+  for(j=i+1;j<10;j++)
+  {
+   if(a[j]>a[i])
+   {
+    temp = a[i];
+    a[i] = a[j];
+    a[j] = temp;
+   }
+  }
+ }
+ printf("printing sorted elements list ... \n");
+ for(i=0;i<10;i++)
+ {
+  printf("%d\n", a[i]);
+ }
+} 
+
+***** C++ program *****
+#include<iostream>
+using namespace std;
+int main()
+{
+ int i, j, temp;
+ int a[10] = {10,9,7,101,23,44,12,78,34,23};
+ for(i=0;i<10;i++)
+ {
+  for(j=i+1;j<10;j++)
+  {
+   if(a[j]<a[i])
+   {
+    temp = a[i];
+    a[i] = a[j];
+    a[j] = temp;
+   }
+  }
+ }
+ cout<<"printing sorted element list...\n";
+ for(i=0;i<10;i++)
+ {
+  cout<<a[i]<<"\n";
+ }
+ return 0;
+}
+
+***** Java program *****
+public class BubbleSort
+{
+ public static void main(String args[])
+ {
+  int a[] = {10,9,7,101,23,44,12,78,34,23};
+  for(int i=0;i<10;i++)
+  {
+   for(int j=0;j<10;j++)
+   {
+    if(a[i]<a[j])
+    {
+     int temp = a[i];
+     a[i] = a[j];
+     a[j] = temp;
+    }
+   }
+  }
+  System.out.println("printing sorted list...");
+  for(int i=0;i<10;i++)
+  {
+   System.out.println(a[i]);
+  }
+ }
+}
+
+***** C# program *****
+using System;
+public class Program
+{
+ public static void Main()
+ {
+  int i,j,temp;
+  int a[] = {10,9,7,101,23,44,12,78,34,23};
+  for(i=0;i<10;i++)
+  {
+   for(j=i+1;j<10;j++)
+   {
+    if(a[j]>a[i])
+    {
+     temp = a[i];
+     a[i] = a[j];
+     a[j] = temp;
+    }
+   }
+  }
+  Console.WriteLine("printing sorted element list ...\n");
+  for(i=0;i<10;i++)
+  {
+   Console.WriteLine(a[i]);
+  }
+ }
+}
+
+***** Python program *****
+a = [10,9,7,101,23,44,12,78,34,23]
+for i in range (0,len(a)):
+  for j in range (i+1,len(a)):
+    if a[j] < a[i]:
+      temp = a[j]
+      a[j] = a[i]
+      a[i] = temp
+print("printing sorted element list...")
+for i in a:
+  print(i)
+  
+***** Rust program *****
+fn main()
+{
+ let mut temp;
+ let mut a: [i32; 10] = [10,9,7,101,23,44,12,78,34,23];
+ for i in 0..10
+ {
+  for j in (i+1)..10
+  {
+   if a[j] < a[i]
+   {
+    temp = a[i];
+    a[i] = a[j];
+    a[j] = temp;
+   }
+  }
+ }
+ println!("printing sorted element list...\n");
+ for i in &a
+ {
+  println!("{}",i);
+ }
+}
+
+***** JavaScript program *****
+<html>
+ <head>
+  <title>
+   Bubble sort
+  </title>
+ </head>
+ <body>
+  <script>
+   var a = [10,9,7,101,23,44,12,78,34,23];
+   for(i=0;i<10;i++)
+   {
+    for(j=0;j<10;j++)
+    {
+     if(a[i]<a[j])
+     {
+      temp = a[i];
+      a[i] = a[j];
+      a[j] = temp;
+     }
+    }
+   }
+   txt = "<br>";
+   document.writeln("printing sorted element list..." + txt);
+   for(i=0;i<10;i++)
+   {
+    document.writeln(a[i]);
+    document.writeln(txt);
+   }
+  </script>
+ </body>
+</html>
+
+***** PHP program *****
+<html>
+ <head>
+  <title>
+   Bubble sort
+  </title>
+ </head>
+ <body>
+  <?php
+   $a = array(10,9,7,101,23,44,12,78,34,23);
+   for($i=0;$i<10;$i++)
+   {
+    for($j=0;$j<10;$j++)
+    {
+     if($a[$i]<$a[$j])
+     {
+      $temp = $a[$i];
+      $a[$i] = $a[$i];
+      $a[$j] = $temp;
+     }
+    }
+   }
+   echo "printing sorted element list...\n";
+   for($i=0;$i<10;$i++)
+   {
+    echo $a[$i];
+    echo "\n";
+   }
+  ?>
+ </body>
+</html>
+
+
+
+    
