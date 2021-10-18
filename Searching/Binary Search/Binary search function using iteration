@@ -1,0 +1,22 @@
+***** Binary search function using iteration *****
+int binarySearch(int a[], int beg, int end, int item)
+{
+ int mid;
+ while(end>=beg)
+ {
+  mid=(beg+end)/2;
+  if(a[mid]==item)
+  {
+   return mid+1;
+  }
+  else if(a[mid]<item)
+  {
+   beg=mid+1;
+  }
+  else
+  {
+   end=mid-1;
+  }
+ }
+ return -1;
+}
