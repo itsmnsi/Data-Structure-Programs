@@ -1,3 +1,4 @@
+***** Python program *****
 a = [10,9,7,101,23,44,12,78,34,23]
 for i in range (0,len(a)):
   for j in range (i+1,len(a)):
